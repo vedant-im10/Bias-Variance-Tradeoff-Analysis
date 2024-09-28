@@ -17,29 +17,7 @@ Gaussian white noise is added to simulate real-world data, and polynomial models
     - Calculate and plot the bias, variance, and total error for models of increasing complexity.
     - Evaluate the error at 10 equally spaced points between -2 and 3.
 
-## 📋 Steps
-
-### 1. Ground Truth and Dataset Generation
-- **Ground Truth Function**: \( f(x) = 2 \cos(x) + \tan(0.5x) \)
-- **Noise**: Added Gaussian white noise \( N(0,1) \)
-- **Dataset**: 100 sample datasets with 20 randomly selected points from the range \([-2, 3]\).
-
-### 2. Polynomial Fits (Figure 4.5 Replication)
-We fit polynomial regression models of different orders to visualize the impact of model complexity.
-
-- **Order 1 (Linear Regression)**: Visualizes a simple linear model.
-- **Order 3 (Cubic Regression)**: Visualizes a cubic model.
-- **Order 5 (Quintic Regression)**: Visualizes a quintic model.
-
-Each plot includes 5 polynomial fits and their average fit (dotted line).
-
-### 3. Bias-Variance Analysis (Figure 4.6 Replication)
-For polynomial models of orders 1 through 5, we calculate:
-- **Bias Error**: \( \text{Bias}^2 = \left( E[f(x)] - \hat{f}(x) \right)^2 \)
-- **Variance Error**: \( \text{Var} = E[\hat{f}(x)^2] - E[\hat{f}(x)]^2 \)
-- **Total Error**: The sum of bias and variance errors.
-
-### 4. Results and Plots
+### Results and Plots
 We generate the following plots:
 - **Ground Truth and Noisy Data**: Visualizes the ground truth function along with one noisy dataset.
 - **Polynomial Fits**: Shows fits for polynomial degrees 1, 3, and 5, each overlaid with the average fit.
